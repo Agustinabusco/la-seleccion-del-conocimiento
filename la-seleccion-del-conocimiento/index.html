@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Selección del Conocimiento</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="contenedor-principal">
+    <section id="pantalla-inicio" class="tarjeta pantalla activa">
+      <p class="etiqueta">Mundial de la Informática</p>
+      <h1>⚽ La Selección del Conocimiento</h1>
+      <p class="descripcion">
+        Respondé preguntas de informática básica. Cada respuesta correcta suma un jugador a tu selección.
+        El objetivo es formar una alineación de 11 jugadores.
+      </p>
+      <button id="btn-comenzar" class="boton-principal">Comenzar juego</button>
+    </section>
+
+    <section id="pantalla-juego" class="pantalla">
+      <header class="encabezado-juego">
+        <div>
+          <p class="etiqueta">Director técnico del conocimiento</p>
+          <h2>Armá tu selección</h2>
+        </div>
+        <div class="marcador">
+          <span id="contador-jugadores">0/11</span>
+          <small>jugadores</small>
+        </div>
+      </header>
+
+      <section class="zona-juego">
+        <article class="tarjeta pregunta-card">
+          <div class="progreso">
+            <span id="numero-pregunta">Pregunta 1</span>
+            <span id="categoria-pregunta">Informática básica</span>
+          </div>
+          <h3 id="texto-pregunta">Pregunta</h3>
+          <div id="opciones" class="opciones"></div>
+          <p id="mensaje" class="mensaje"></p>
+          <button id="btn-siguiente" class="boton-secundario oculto">Siguiente pregunta</button>
+        </article>
+
+        <article class="tarjeta cancha-card">
+          <h3>Tu cancha</h3>
+          <p class="ayuda">Los jugadores aparecen cuando respondés correctamente.</p>
+          <div id="cancha" class="cancha" aria-label="Cancha con la alineación de jugadores"></div>
+        </article>
+      </section>
+    </section>
+
+    <section id="pantalla-final" class="tarjeta pantalla">
+      <p class="etiqueta">Resultado final</p>
+      <h2 id="titulo-final">Resultado</h2>
+      <p id="texto-final" class="descripcion"></p>
+      <div id="alineacion-final" class="alineacion-final"></div>
+      <button id="btn-reiniciar" class="boton-principal">Jugar de nuevo</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
