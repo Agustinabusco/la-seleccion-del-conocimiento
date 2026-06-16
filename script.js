@@ -172,21 +172,21 @@ class Juego {
     ];
   }
 
-  crearJugadores() {
-    return [
-      new Jugador("Valentina", "Arquero"),
-      new Jugador("Mateo", "Defensa"),
-      new Jugador("Sofía", "Defensa"),
-      new Jugador("Joaquín", "Defensa"),
-      new Jugador("Camila", "Defensa"),
-      new Jugador("Tomás", "Mediocampista"),
-      new Jugador("Martina", "Mediocampista"),
-      new Jugador("Pedro", "Mediocampista"),
-      new Jugador("Ana", "Delantero"),
-      new Jugador("Lucas", "Delantero"),
-      new Jugador("Emilia", "Delantero")
-    ];
-  }
+ crearJugadores() {
+  return [
+    new Jugador("Sergio Rochet", "Arquero"),
+    new Jugador("Ronald Araújo", "Defensa"),
+    new Jugador("José María Giménez", "Defensa"),
+    new Jugador("Mathías Olivera", "Defensa"),
+    new Jugador("Sebastián Cáceres", "Defensa"),
+    new Jugador("Manuel Ugarte", "Mediocampista"),
+    new Jugador("Rodrigo Bentancur", "Mediocampista"),
+    new Jugador("Federico Valverde", "Mediocampista"),
+    new Jugador("Darwin Núñez", "Delantero"),
+    new Jugador("Facundo Pellistri", "Delantero"),
+    new Jugador("Maximiliano Araújo", "Delantero")
+  ];
+}
 
   iniciar() {
     this.preguntas = this.mezclarArray(this.preguntas);
